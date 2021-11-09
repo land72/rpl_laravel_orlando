@@ -13,36 +13,34 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('dashadmin');
 
+Route::get('/buatsuratdosen', function () {
+    return view('buatsuratdosen');
 });
-Route::get('/login', function () {
-    return view('login');
-
-});
-Route::get('/web', function () {
-    return view('web');
-});
-Route::get('/dashboardmahasiswa', function () {
-    return view('dashboardmahasiswa');
-});
-Route::get('/buatsurat', function () {
-    return view('buatsurat');
-});
-Route::get('/suratmasuk', function () {
-    return view('suratmasuk');
+Route::get('/suratmasukdosen', function () {
+    return view('suratmasukdosen');
 });
 
 
-Route::get('/suratkeluar', function () {
-    return view('suratkeluar');
+Route::get('/suratkeluardosen', function () {
+    return view('suratkeluardosen');
 });
 
 
-Route::get('/arsipsurat', function () {
-    return view('arsipsurat');
+Route::get('/arsipsuratdosen', function () {
+    return view('arsipsuratdosen');
 });
-Route::get('/dashboard', function () {
+
+
+Route::get('/editsuratdosen', function () {
+    return view('editsuratdosen');
+
+});
+Route::get('/dashboarddosen', function () {
     return view('dashboarddosen');
+
+});
+Route::get('/notifikasidosen', function () {
+    return view('notifikasidosen');
+
 });

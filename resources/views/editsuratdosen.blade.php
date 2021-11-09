@@ -37,7 +37,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="/dash" class="nav-link">Dashboard</a>
+        <a href="/dashmhs" class="nav-link">Dashboard</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
@@ -54,12 +54,16 @@
           hours = x.getHours( ) % 12;
           hours = hours ? hours : 12;
           hours=hours.toString().length==1? 0+hours.toString() : hours;
+
           var minutes=x.getMinutes().toString()
           minutes=minutes.length==1 ? 0+minutes : minutes;
+
           var seconds=x.getSeconds().toString()
           seconds=seconds.length==1 ? 0+seconds : seconds;
+
           var month=(x.getMonth() +1).toString();
           month=month.length==1 ? 0+month : month;
+
           time =hours + ":" +  minutes + ":" + " " + ampm;
           document.getElementById('ct7').innerHTML = time;
           display_c7();
@@ -111,10 +115,10 @@
               <img src="{{ asset('') }}assets/dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
-                  Brad Diesel
+                  Irwan Kurniadi
                   <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
                 </h3>
-                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm">SK telah saya terima</p>
                 <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
               </div>
             </div>
@@ -127,10 +131,10 @@
               <img src="{{ asset('') }}assets/dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
-                  John Pierce
+                  Christoper Dori
                   <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
                 </h3>
-                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm">Saya mendapatkan pesan dari mu,kawan.</p>
                 <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
               </div>
             </div>
@@ -143,17 +147,17 @@
               <img src="{{ asset('') }}assets/dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
-                  Nora Silvester
+                  Orlando sinaga
                   <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
                 </h3>
-                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm">Pesan berhasil diterima</p>
                 <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
               </div>
             </div>
             <!-- Message End -->
           </a>
           <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+          <a href="#" class="dropdown-item dropdown-footer">Tampilkan semua pesan</a>
         </div>
       </li>
       <!-- Notifications Dropdown Menu -->
@@ -166,21 +170,21 @@
           <span class="dropdown-item dropdown-header">15 Notifications</span>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
-            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <i class="fas fa-envelope mr-2"></i> 4 pesan masuk
             <span class="float-right text-muted text-sm">3 mins</span>
           </a>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
-            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <i class="fas fa-users mr-2"></i> 8 permintaan pertemanan
             <span class="float-right text-muted text-sm">12 hours</span>
           </a>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
-            <i class="fas fa-file mr-2"></i> 3 new reports
+            <i class="fas fa-file mr-2"></i> 3 laporan terbaru
             <span class="float-right text-muted text-sm">2 days</span>
           </a>
           <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+          <a href="#" class="dropdown-item dropdown-footer">Tampilkan semua notifikasi</a>
         </div>
       </li>
     </ul>
@@ -203,7 +207,7 @@
           <img src="{{ asset('') }}assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="/profile" class="d-block">Irwan Kurniadi</a>
+          <a href="/profile" class="d-block">Christoper Dori</a>
         </div>
       </div>
 
@@ -222,11 +226,11 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-            <li class="nav-item">
+               <li class="nav-item">
                <li class="nav-header"><i>Main Menu</i></li>
             </li>
             <li class="nav-item">
-              <a href="/dash" class="nav-link">
+              <a href="/dashboarddosen" class="nav-link">
                 <i class="nav-icon fas fa-chart-bar"></i>
                 <p>
                   Dashboard
@@ -237,7 +241,7 @@
                <li class="nav-header"><i>Workspace</i></li>
             </li>
             <li class="nav-item">
-              <a href="/dash/notification" class="nav-link">
+              <a href="notifikasidosen" class="nav-link">
                 <i class="nav-icon far fa-bell"></i>
                 <p>
                   Notification
@@ -246,7 +250,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="buatsurat" class="nav-link">
+              <a href="/buatsuratdosen" class="nav-link">
                 <i class="nav-icon fas fa-arrow-circle-right"></i>
                 <p>
                   Buat Surat
@@ -257,28 +261,28 @@
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-inbox"></i>
                 <p>
-                 Jenis Surat
+                  Jenis Surat
                   <i class="right fas fa-angle-left"></i>
                 </p>
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="/suratmasuk" class="nav-link ml-3">
-                    <i class="fas fa-user-tie nav-icon"></i>
+                  <a href="/suratmasukdosen" class="nav-link ml-3">
+                    <i class="far fa-envelope nav-icon"></i>
                     <p>Surat Masuk</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="/suratkeluar" class="nav-link ml-3">
-                    <i class="fas fa-user-graduate nav-icon"></i>
-                    <p>suratkeluar</p>
+                  <a href="/suratkeluardosen" class="nav-link ml-3">
+                    <i class="fas fa-envelope-open-text nav-icon"></i>
+                    <p>Surat Keluar</p>
                   </a>
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a href="/arsipsurat" class="nav-link">
-                <i class="bi bi-arrow-right-short"></i>
+              <a href="/arsipsuratdosen" class="nav-link">
+                <i class="nav-icon fas fa-archive"></i>
                 <p>
                   Arsip Surat
                 </p>
@@ -297,81 +301,47 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Surat Masuk</h1>
-        
-
-
-<form>
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">No</th>
-      <th scope="col">No. agenda/kode</th>
-      <th scope="col">Nama  file</th>
-      <th scope="col">Tanggal pengiriman</th>
-      <th scope="col">Status</th>
-      <th scope="col">Aksi</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">4</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">5</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-      <td>Otto</td>
-      <td><i class="bi bi-download"></i></td>
-    </tr>
-    
-  </tbody>
-</table>
-</form>
-
-
-
-
-
-              <!-- /.card-body -->
-            </div>
+            <h1 class="m-0">Edit Surat</h1>
           </div>
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
-  </div>
-  <!-- /.content-wrapper -->
+        </div>
+        </head>
+<body>
+
+<nav class="navbar navbar-light bg-light">
+    </nav>
+        <form method="post" action="//">
+        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+        <div class="form-group">
+                <label for="exampleFormControlSelect1">Jenis surat</label>
+                <select class="form-control" name="jenis surat">
+                <option>--Pilih jenis surat--</option>
+                <option>Surat personalia & SK</option>
+                <option>SK kegiatan mahasiswa</option>
+                <option>Surat undangan,daftar hadir kegiatan</option>
+                <option>Surat tugas dan DP3</option>
+                <option>Surat berita acara kegiatan</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Tanggal pelaksanaan kegiatan</label>
+                <input type="date" class="form-control" name="tglplkkeg" placeholder="Masukkan tgl pelaksanaan kegiatan">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Lokasi kegiatan</label>
+                <input type="text" class="form-control" name="lokasikegiatan" placeholder="Masukkan lokasi kegiatan">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Nama Mitra</label>
+                <input type="text" class="form-control" name="namamitra" placeholder="Masukkan nama mitra">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Keterangan</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Masukkan Keterangan"></textarea>
+
+            </div>
+            <a class="btn btn-primary" href="" role="button">Submit</a>
+            <a class="btn btn-danger" href="" role="button">Reset</a>
+
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
@@ -416,52 +386,7 @@
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{ asset('') }}assets/dist/js/pages/dashboard.js"></script>
 <script>
-  $(function () {
-    var areaChartData = {
-      labels  : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-      datasets: [
-        {
-          label               : 'Digital Goods',
-          backgroundColor     : 'rgba(60,141,188,0.9)',
-          borderColor         : 'rgba(60,141,188,0.8)',
-          pointRadius          : false,
-          pointColor          : '#3b8bba',
-          pointStrokeColor    : 'rgba(60,141,188,1)',
-          pointHighlightFill  : '#fff',
-          pointHighlightStroke: 'rgba(60,141,188,1)',
-          data                : [28, 48, 40, 19, 86, 27, 90]
-        },
-        {
-          label               : 'Electronics',
-          backgroundColor     : 'rgba(210, 214, 222, 1)',
-          borderColor         : 'rgba(210, 214, 222, 1)',
-          pointRadius         : false,
-          pointColor          : 'rgba(210, 214, 222, 1)',
-          pointStrokeColor    : '#c1c7d1',
-          pointHighlightFill  : '#fff',
-          pointHighlightStroke: 'rgba(220,220,220,1)',
-          data                : [65, 59, 80, 81, 56, 55, 40]
-        },
-      ]
-    }
 
-    var barChartCanvas = $('#barChart').get(0).getContext('2d')
-    var barChartData = $.extend(true, {}, areaChartData)
-    var temp0 = areaChartData.datasets[0]
-    var temp1 = areaChartData.datasets[1]
-    barChartData.datasets[0] = temp1
-    barChartData.datasets[1] = temp0
-    var barChartOptions = {
-      responsive              : true,
-      maintainAspectRatio     : false,
-      datasetFill             : false
-    }
-    new Chart(barChartCanvas, {
-      type: 'bar',
-      data: barChartData,
-      options: barChartOptions
-    })
-  })
 </script>
 </body>
 </html>
